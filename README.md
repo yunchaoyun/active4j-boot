@@ -16,11 +16,13 @@ Active4j-Boot是基于SpingBoot2.0轻量级的java快速开发框架。以Spring
  - Active4j-Boot定位于企业快速开发平台建设，代码全部开源，持续更新，共同维护。Active4j可以应用在任何J2EE的项目开发中，尤其适合企业信息管理系统（MIS），企业办公系统（OA），客户关系管理系统（CRM），内容管理系统（CMS）等。
 
 # 技术文档
-- 演示地址：
+- 演示地址：[http://www.active4j.com:9001/boot](http://www.active4j.com:9001/boot "http://www.active4j.com:9001/boot")
 - 官方网站：[www.active4j.com](http://www.active.com "www.active4j.com")
-- 文档地址：
-- JSP版本：
-- 基于layui前后端分离版本：
+- 文档地址：[http://www.active4j.com/doc](http://www.active4j.com/doc "http://www.active4j.com/doc")
+- 前后端分离版本github：[https://github.com/yunchaoyun/active4j](https://github.com/yunchaoyun/active4j "https://github.com/yunchaoyun/active4j")
+- jsp版本github：https://github.com/yunchaoyun/active4j-jsp
+- 前后端分离版本gitee：[https://gitee.com/active4j/active4j](https://gitee.com/active4j/active4j "https://gitee.com/active4j/active4j")
+- jsp版本gitee：https://gitee.com/active4j/active4j-jsp
 
 # 项目特点
 - 开箱即用，节省开发时间，提高开发效率
