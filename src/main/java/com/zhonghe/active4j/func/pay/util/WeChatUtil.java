@@ -20,6 +20,8 @@ import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -370,9 +372,7 @@ public class WeChatUtil {
         String result = "";
         try {
             Security.addProvider(new BouncyCastleProvider());
-            sun.misc.BASE64Decoder decoder = new sun.misc.BASE64Decoder();
-            byte[] bt = decoder.decodeBuffer(reqInfoSecret);
-            String b = new String(bt);
+            byte[] bt = Base64.decodeBase64(reqInfoSecret);
             String md5key = Md5Util.string2MD5(key);
             SecretKey secretKey = new SecretKeySpec(md5key.getBytes(), "AES");
             Cipher cipher = Cipher.getInstance("AES/ECB/PKCS7Padding", "BC");
