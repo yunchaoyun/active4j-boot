@@ -73,9 +73,7 @@ public class SysRoleController extends BaseController {
 		
 		//执行查询
 		List<SysRoleEntity> lstResult = sysRoleService.list(queryWrapper);
-		//防止中文乱码
-		response.setContentType("text/xml;charset=utf-8");
-		response.setCharacterEncoding("utf-8");
+
 		//结果处理,直接写到客户端
 		ResponseUtil.write(response, new RoleWrapper(lstResult).wrap());
 	}

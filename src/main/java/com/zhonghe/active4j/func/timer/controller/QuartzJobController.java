@@ -76,9 +76,6 @@ public class QuartzJobController extends BaseController {
 		QueryWrapper<QuartzJobEntity> queryWrapper = QueryUtils.installQueryWrapper(quartzJobEntity, request.getParameterMap());
 		//执行查询
 		IPage<QuartzJobEntity> lstResult = quartzJobService.page(page.getPageEntity(), queryWrapper);
-		//防止中文乱码
-		response.setContentType("text/xml;charset=utf-8");
-		response.setCharacterEncoding("utf-8");
 		//结果处理，直接写到客户端
 		ResponseUtil.write(response, new QuartzJobWrapper(lstResult).wrap());
 	}

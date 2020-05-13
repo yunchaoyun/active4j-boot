@@ -86,9 +86,7 @@ public class SysDicController extends BaseController {
 		List<SysDicEntity> lstResult = sysDicService.list(queryWrapper);
 		
 		List<TreeSysDicModel> lstModes = getDicTree(lstResult);
-		//防止中文乱码
-		response.setContentType("text/xml;charset=utf-8");
-		response.setCharacterEncoding("utf-8");
+
 		ResponseUtil.write(response, new DicWrapper(lstModes).wrap());
 		
 	}
