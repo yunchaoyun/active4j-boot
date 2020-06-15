@@ -40,7 +40,7 @@
             </div>
             <div class="layui-col-xs5">
               <div style="margin-left: 10px;">
-                <img src="${ctxPath}/vercode" class="layadmin-user-login-codeimg" id="randCodeImage">
+                <img src="" class="layadmin-user-login-codeimg" id="randCodeImage">
               </div>
             </div>
           </div>
@@ -104,6 +104,9 @@
 	         });
       
     });
+    
+    //初始验证码
+    reloadRandCodeImage();
     
     
     /**
