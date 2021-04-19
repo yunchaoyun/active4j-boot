@@ -248,6 +248,12 @@
 			<groupId>com.qcloud</groupId>
 			<artifactId>cos_api</artifactId>
 			<version>5.5.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<!-- poi -->
@@ -267,6 +273,13 @@
 			<groupId>com.github.penggle</groupId>
 			<artifactId>kaptcha</artifactId>
 			<version>2.3.2</version>
+		</dependency>
+		
+		<!-- 集成jimu报表JimuReport  -->
+		<dependency>
+		    <groupId>org.jeecgframework.jimureport</groupId>
+		    <artifactId>spring-boot-starter-jimureport</artifactId>
+		    <version>1.3.1-beta4</version>
 		</dependency>
 	</dependencies>
 

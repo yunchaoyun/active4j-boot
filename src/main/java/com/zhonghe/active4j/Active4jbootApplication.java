@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
  * @author teli_
  *
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.jeecg.modules.jmreport", "com.zhonghe.active4j"})
 @EnableScheduling //开启定时任务注解
 @Slf4j
 public class Active4jbootApplication {
