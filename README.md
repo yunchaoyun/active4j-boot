@@ -52,6 +52,7 @@ Active4j-Boot是基于SpingBoot2.0轻量级的java快速开发框架。以Spring
 - 日志记录采用aop(LogAop类)方式，可对用户所有操作进行记录
 - 引入quartz定时任务，可动态完成任务的添加、修改、删除、暂停、恢复及日志查看等功能
 - 数据统计报表：丰富的报表统计功能
+- 集成积木报表。jimureport
 - 利用beetl模板引擎对前台页面进行封装和拆分，使代码变得简洁，更加易维护
 - 前端组件丰富，集成layuiadmin，基本涵盖了所有前端开发需求
 - 前端页面简洁优美，支持移动端
@@ -70,6 +71,7 @@ Active4j-Boot是基于SpingBoot2.0轻量级的java快速开发框架。以Spring
         •	com.zhonghe.active4j.func.layedit -- 富文本编辑器
         •	com.zhonghe.active4j.func.message -- 系统消息
         •	com.zhonghe.active4j.func.pay -- 支付功能
+        •	com.zhonghe.active4j.func.report -- 集成积木报表
         •	com.zhonghe.active4j.func.sms -- 短信发送
         •	com.zhonghe.active4j.func.timer -- 定时任务
         •	com.zhonghe.active4j.func.upload -- 上传下载
@@ -126,6 +128,7 @@ Active4j-Boot是基于SpingBoot2.0轻量级的java快速开发框架。以Spring
     ○ 邮件发送：集成邮件发送功能，富文本编辑器支持，发送普通文本，HTML文本等
     ○ 微信支付：集成微信native支付功能
     ○ 支付宝支付：集成支付宝网站二维码支付功能
+    ○ 报表插件：集成JimuReport,积木报表
     ○ 短信服务
         •阿里云短信：集成阿里云短信SDK
         •腾讯云短信：集成腾讯云短信SDK
